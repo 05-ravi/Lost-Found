@@ -1,7 +1,11 @@
 import axios from 'axios';
 import useAuthStore from '../store/authStore';
 
-const API_URL = import.meta.env.VITE_API_URL || `http://${window.location.hostname}:5001/api`;
+const API_URL = import.meta.env.VITE_API_URL;
+
+if (!API_URL) {
+  console.warn('VITE_API_URL is not defined in environment variables.');
+}
 
 const axiosInstance = axios.create({
   baseURL: API_URL,
