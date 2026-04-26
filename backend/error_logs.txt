@@ -1,0 +1,51 @@
+[2026-04-11T07:10:13.095Z] POST /api/reports - 500 - Cloudinary upload failed: Unknown API key your_api_key
+Error: Cloudinary upload failed: Unknown API key your_api_key
+    at uploadImage (/Users/ravidevraj/Documents/lost-and-found/backend/services/cloudinaryService.js:14:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/ravidevraj/Documents/lost-and-found/backend/controllers/reportController.js:18:27
+
+[2026-04-11T07:10:18.863Z] POST /api/reports - 500 - Cloudinary upload failed: Unknown API key your_api_key
+Error: Cloudinary upload failed: Unknown API key your_api_key
+    at uploadImage (/Users/ravidevraj/Documents/lost-and-found/backend/services/cloudinaryService.js:14:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/ravidevraj/Documents/lost-and-found/backend/controllers/reportController.js:18:27
+
+[2026-04-23T06:28:49.605Z] GET /api/reports/stats - 500 - Operation `reports.countDocuments()` buffering timed out after 10000ms
+MongooseError: Operation `reports.countDocuments()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/ravidevraj/Documents/lost-and-found/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+
+[2026-04-23T06:29:41.125Z] POST /api/auth/login - 500 - Operation `users.findOne()` buffering timed out after 10000ms
+MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/ravidevraj/Documents/lost-and-found/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+
+[2026-04-23T06:30:27.378Z] POST /api/auth/login - 500 - Operation `users.findOne()` buffering timed out after 10000ms
+MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/ravidevraj/Documents/lost-and-found/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+
+[2026-04-23T06:35:21.008Z] POST /api/auth/login - 500 - Operation `users.findOne()` buffering timed out after 10000ms
+MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/Users/ravidevraj/Documents/lost-and-found/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+
+[2026-04-26T10:16:14.302Z] POST /api/auth/login - 500 - 0031E10402000000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:ssl/record/rec_layer_s3.c:918:SSL alert number 80
+
+MongoServerSelectionError: 0031E10402000000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:ssl/record/rec_layer_s3.c:918:SSL alert number 80
+
+    at Topology.selectServer (/Users/ravidevraj/Documents/lost-and-found/backend/node_modules/mongodb/lib/sdam/topology.js:327:38)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at process.processTimers (node:internal/timers:509:9)
+    at async tryOperation (/Users/ravidevraj/Documents/lost-and-found/backend/node_modules/mongodb/lib/operations/execute_operation.js:196:22)
+    at async executeOperation (/Users/ravidevraj/Documents/lost-and-found/backend/node_modules/mongodb/lib/operations/execute_operation.js:78:16)
+    at async FindCursor._initialize (/Users/ravidevraj/Documents/lost-and-found/backend/node_modules/mongodb/lib/cursor/find_cursor.js:62:26)
+    at async FindCursor.cursorInit (/Users/ravidevraj/Documents/lost-and-found/backend/node_modules/mongodb/lib/cursor/abstract_cursor.js:632:27)
+    at async FindCursor.fetchBatch (/Users/ravidevraj/Documents/lost-and-found/backend/node_modules/mongodb/lib/cursor/abstract_cursor.js:666:13)
+    at async FindCursor.next (/Users/ravidevraj/Documents/lost-and-found/backend/node_modules/mongodb/lib/cursor/abstract_cursor.js:342:17)
+    at async Collection.findOne (/Users/ravidevraj/Documents/lost-and-found/backend/node_modules/mongodb/lib/collection.js:313:24)
+
